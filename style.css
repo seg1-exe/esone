@@ -1,0 +1,194 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  font-family: "Helvetica", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px 0px 30px;
+}
+
+main{
+  padding: 150px 0px 0px 30px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  right: 30px;
+}
+
+h1{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.tracklist-container p{
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+h2{
+  font-size: 24px;
+}
+
+#myProgress {
+  width: 300px;
+  background-color: #d9d9f29b; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#myBar {
+  width: 0%;
+  height: 5px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.btn-action{
+  cursor: pointer;
+  padding-top: 10px;
+  width: 30px;
+}
+
+.btn-ctn, .infos-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-ctn > div {
+ padding: 5px;
+ margin-top: 18px;
+ margin-bottom: 18px;
+}
+
+.player-infos{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.player-infos > div{
+  margin: 0 10px;
+}
+
+.first-btn{
+  margin-left: 3px;
+}
+
+.duration{
+  margin-left: 10px;
+}
+
+.title{
+  margin-left: 10px;
+  width: 210px;
+}
+
+.playlist-track-ctn{
+  display: flex;
+  background-color: #464646;
+  margin-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playlist-track-ctn > div{
+  margin:10px;
+}
+.playlist-info-track{
+  width: 80%;
+}
+.playlist-info-track,.playlist-duration{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #FFFFFF;
+  font-size: 14px;
+  pointer-events: none;
+}
+.playlist-ctn{
+   padding-bottom: 20px;
+}
+.active-track{
+  background: #4d4d4d;
+  color: #FFFFFF !important;
+  font-weight: bold;
+  
+}
+
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+  color: #FFFFFF !important;
+}
+
+
+.playlist-btn-play{
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.fas{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.credit-page{
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.credit-main{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.credit-main>h2{
+  margin-bottom: 45px;
+  font-size: 36px;
+}
+
+.credit-main>p{
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.credit-infos{
+  position: fixed;
+  bottom: 50px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.close-credits{
+  position: fixed;
+  font-size: 24px;
+  right: 30px;
+  bottom: 50px;
+  cursor: pointer;
+}
