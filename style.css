@@ -85,6 +85,12 @@ h2{
  margin-bottom: 18px;
 }
 
+.player-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .player-infos{
   display: flex;
   align-items: center;
@@ -93,7 +99,14 @@ h2{
 
 .player-infos > div{
   margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
+
+.player-infos > div > div{
+  margin: 10px;
+}
+
 
 .first-btn{
   margin-left: 3px;
@@ -105,7 +118,6 @@ h2{
 
 .title{
   margin-left: 10px;
-  width: 210px;
 }
 
 .playlist-track-ctn{
@@ -191,4 +203,35 @@ h2{
   right: 30px;
   bottom: 50px;
   cursor: pointer;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px){ 
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-ctn{
+    flex-direction: column;
+  }
+
+  .player-infos{
+    flex-direction: column;
+  }
+
+  #myProgress {
+    width: 200px;
+  }
+
+  .btn-ctn > div {
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .footer-right{
+    margin-top: 30px;
+  }
 }
